@@ -1,7 +1,7 @@
 
 let player1 = {
     name:'Scorpion',
-    hp: 100,
+    hp: '100%',
     img:'http://reactmarathon-api.herokuapp.com/assets/scorpion.gif',
     weapon:['Kunai'],
     attack: function(){
@@ -12,7 +12,7 @@ let player1 = {
 
 let player2 = {
     name:'Sub-Zero',
-    hp: 100,
+    hp: '100%',
     img:'http://reactmarathon-api.herokuapp.com/assets/subzero.gif',
     weapon:['Sword'],
     attack: function(){
@@ -26,7 +26,7 @@ function createPlayer (playerName, playerObj) {
     player.classList.add(playerName);
 
     let progressBar = document  .createElement('div');
-    progressBar.classList.add('progressBar');
+    progressBar.classList.add('progressbar');
     
     let life = document.createElement('div');
     life.classList.add('life');
